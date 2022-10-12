@@ -2,12 +2,12 @@
 
 ## Índice
 
-* [1. Objetivos de aprendizaje generales](#1-objetivos-de-aprendizaje-generales)
-* [2. Preámbulo](#2-preámbulo)
-* [3. Resumen del proyecto](#3-resumen-del-proyecto)
-* [4. Consideraciones generales](#4-consideraciones-generales)
-* [5. Hito 1: Criterios de aceptación mínimos del proyecto](#5-hito-1-criterios-de-aceptación-mínimos-del-proyecto)
-* [6. Hito 2 (opcional): Mostrar la franquicia de tarjeta](#6-hito-2-opcional-mostrar-la-franquicia-de-tarjeta)
+* [1. Proyecto](#1-proyecto)
+* [2. Prototipo](#2-prototipo)
+* [3. Publico objetivo](#3-Publico objetivo)
+* [4. Que problema resuelve](#4- Que problema resuelve)
+* [5. Interfaz](#5-Interfaz)
+* [6. Lecturas y recursos  utilizados](#6 Lecturas y recuersos  utilizados)
 * [7. Consideraciones técnicas](#7-consideraciones-técnicas)
 * [8. Objetivos de aprendizaje](#8-objetivos-de-aprendizaje)
 * [9. Pistas, tips y lecturas complementarias](#9-pistas-tips-y-lecturas-complementarias)
@@ -15,93 +15,41 @@
 
 ***
 
-## 1. Objetivos de aprendizaje generales
-Como continuación del proyecto de preadmisión, volverás a trabajar sobre fundamentos de JavaScript, incluyendo conceptos como variables, condicionales, y funciones, así como eventos y manipulación básica del DOM, fundamentos de HTML y CSS.
+## 1. Proyecto
 
-Mientras desarrollas este proyecto, te familiarizarás con estos nuevos conceptos:
+Este proyecto consiste en crear una interfaz que permita al usuario ingresar los datos de su tarjeta de credito  para poder culminar el proceso de compra en la tienda de productos Kawaii, esta tienda cuenta con articulos exclusivos del mundo Kawaii, que desde hace varios años se ha relacionado con moda y personajes dentro de la cultura pop japonesa y que el propio concepto busca expresar una sensación de alegría e ilusión y no solo se usa para describir a bebés o animales, sino que también se aplica a ropa, artículos de decoración y hasta dulces, esta tienda busca captar toda la cultura del concepto Kawaii para hacer sentir a su público dentro de un espacio conocido, seguro y que les genere emoción y felicidad al realizar su compra.
 
-* Un _boilerplate_, la estructura básica de un proyecto en distintas carpetas (a través `modulos` en JS).
-* Las herramientas de mantenimiento y mejora del código (linters y pruebas unitarias).
-* Objetos en JavaScript, su estructura y métodos.
-* Iteración (bucles) en JavaScript.
-* Control de versiones con git (y la plataforma github)
 
-## 2. Preámbulo
 
-El [algoritmo de Luhn](https://es.wikipedia.org/wiki/Algoritmo_de_Luhn),
-también llamado algoritmo de módulo 10, es un método de suma de verificación,
-se utiliza para validar números de identificación; tales como el IMEI de los
-celulares, tarjetas de crédito, etc.
+## 2. Prototipo
 
-Este algoritmo es simple. Obtenemos el reverso del número a verificar (que
-solamente contiene dígitos [0-9]); a todos los números que ocupan una posición
-par se les debe multiplicar por dos, si este número es mayor o igual a 10,
-debemos sumar los dígitos del resultado; el número a verificar será válido si
-la suma de sus dígitos finales es un múltiplo de 10.
+Se desarrollo esta interfaz a través de mini proyectos en Notion y luego con una planificacion en notas con Trello, en cuanto al diseño se armó
+un esqueleto básico en papel y sobre todo se considero el uso de colores e imagenes relacionadas a la cultura Kawaii.
 
-![gráfica de algoritmo de Luhn](https://www.101computing.net/wp/wp-content/uploads/Luhn-Algorithm.png)
+## 3. Publico objetivo 
 
-## 3. Resumen del proyecto
+La página está dirigida a las seguidores de la cultura Kawaii, especificamemnte a un público femenino entre 25 y 40 años  que cuenta con una fuente de ingresos, que sean mamás y que tiene un gusto singular por los articulos Kawaii para satisfacer las necesidades de su dia a dia, ejemplo: estudios o trabajo (a través de articulos de papelería y escritorio, articulos personales como mochilas, carteras, bolsos) y en el hogar(articulos personalizados para sus hijos y ellas)
 
-En este proyecto tendrás que construir una aplicación web que le permita a un
-usuario validar el número de una tarjeta de crédito. Además, tendrás que
-implementar funcionalidad para ocultar todos los dígitos de una tarjeta menos
-los últimos cuatro.
 
-La temática es libre. Tú debes pensar en qué situaciones de la vida real se
-necesitaría validar una tarjeta de crédito y pensar en cómo debe ser esa
-experiencia de uso (qué pantallas, explicaciones, mensajes, colores, ¿marca?)
-etc.
+## 4. Que problema resuelve
 
-Trabajando en parejas aprenderán a construir una aplicación web que interactuará
-con la usuaria final a través del navegador, utilizando HTML, CSS y JavaScript
-como tecnologías.
+La tienda satisface la necesidad de organización y bienestar que la cultura Kawaii ofrece, nuestro publico son principalmente mamás con hijos que lidian durante el dia con la organizacion de las actividades del hogar, trabajo, hijos, familia, a veces esto puede llegar a ser muy estresante, la cultura Kawaii transmite alegría, belleza, ternura, además una calidez que nuestro público objetivo puede introducir en su día a dia y hacerlo más especial y que la carga de estres se transforme en una experiencia de colores, olores y alegría.
 
-## 4. Consideraciones generales
+## 5.Interfaz
 
-* Este proyecto lo resolvemos de manera individual. Te recomendamos una duracion de 1-3 sprints.
-* Enfócate en aprender y no solamente en "completar" el proyecto. Te va a costar.
-* Te sugerimos que no intentes saberlo todo antes de empezar a codear.  
-No te preocupes demasiado ahora por lo que _todavía_ no entiendas. Irás aprendiendo.
 
-## 5. Hito 1: Criterios de aceptación mínimos del proyecto
 
-Estos son los requisitos que tu proyecto debe que cumplir para asegurar que tu trabajo cubra los objetivos principales.  
 
-**1. Una interfaz que debe permitir a la usuaria validar un numero**  
-  * Insertar un numero (texto) que quieres validar. Usa solo caracteres numéricos (dígitos) en la tarjeta a validar [0-9].  
-  * Ver si el resultado es válido o no.  
-  * Ocultar todos los dígitos del número de tarjeta a exepción de los últimos 4 caracteres.  
-  * No debes poder ingresar un campo vacío.  
+## 6. Lectura y recursos
 
-**2. Pruebas unitarias de los métodos.**  
-  Los metódos de `validator` (`isValid` y `maskify`) deben tener cobertura con pruebas unitarias.
+Me apalanqué de muchas lecturas y tutoriales para poder entender el proceso de la logica y luego como dar estructura y estilo a mi interfaz, detallo algunas pag donde hice muchas consultas:
 
-**3. Código de tu proyecto subido a tu repo y interfaz "desplegada".**  
-  El código final debe estar subido en un repositorio en GitHub. La interfaz o pagina web, debe ser "desplegada" usando GitHub Pages.
-  
-**4. Un README que contiene una definición del producto.**  
-  En el README cuéntanos cómo pensaste en los usuarios y cuál fue tu proceso para definir el producto final a nivel de experiencia y de interfaz.  
-  Estas preguntas sirven como guía:
-
-  * Quiénes son los principales usuarios de producto.
-  * Cuáles son los objetivos de estos usuarios en relación con tu producto.
-  * Cómo crees que el producto que estás creando está resolviendo sus problemas.
-
-Con estos requisitos cumplidos puedes [considerar agendar un Project Feedback con unx coach.](https://github.com/Laboratoria/DEV001-card-validation#10-para-considerar-project-feedback)
-
-## 6. Hito 2 (opcional): Mostrar la franquicia de tarjeta
-
-Las partes "opcionales" tienen como intención permitirte profundizar un poco más sobre 
-los objetivos de aprendizaje del proyecto. Todo en la vida tiene pros y contras, decide 
-sabiamente si quieres invertir el tiempo en profundizar/perfeccionar o aprender cosas 
-nuevas en el siguiente proyecto.
-
-En hito 2 puedes además de validar si el número de la 
-tarjeta es válida, mostrar la [franquicia](https://es.wikipedia.org/wiki/N%C3%BAmero_de_tarjeta_bancaria) de la tarjeta (ej: Visa, MasterCard, etc)
-usando estas [reglas de validación](https://stevemorse.org/ssn/cc.html). Si escribes un nuevo método para eso, hay que hacer pruebas unitarias.
-
-***
+https://www.w3schools.com
+https://developer.mozilla.org/
+https://webdesign.tutsplus.com
+https://javascript.info
+https://www.youtube.com/watch?v=7bciaLTTr7s
+https://exercism.org/tracks/javascript/exercises/annalyns-infiltration
 
 ## 7. Consideraciones técnicas
 
