@@ -1,14 +1,56 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Tarjeta de crédito válida</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
-    <script src="index.js" type="module"></script>
-  </body>
-</html>
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="utf-8">
+      <title> validar tarjeta </title>
+      <link rel="stylesheet" href="style.css" />
+
+    </head>
+    <body>
+      <div id="introduccion">
+        <h3> Tu compra ya está casi lista <br> <br>validemos tu tarjeta!</h3>
+        </div>
+        <br>
+      
+      <div id="cuerpo">
+      <div class= "datos">
+      <label for="inputNombre">Nombre del titular</label>
+      <input type="text" id="inputNombre" autocomplete="off">
+      
+    </div>
+      <div class="datos">
+        <label for="inputNumero">Número de tarjeta</label>
+        <input type="text" id="inputNumero" autocomplete="off">
+        <!-- Con maxlength puedo darle un maximo de caracteres que el usuario puede ingresar  -->
+      </div>
+      <div class="datosExpira">
+        <label for="datoMes">Mes</label>
+        <input type="text" id="datoMes">
+      </div>
+      <div class="datosExpira">
+        <label for="datoYears">Año</label>
+        <input type="text" id="datoYears">
+      </div>
+      <div class="codigoCvv">
+        <label for="datoCvv">CVV</label>
+        <input type="password" id="datoCvv">
+      </div>
+        <br>
+        <br>
+        <button id ="validarTarjeta">VALIDAR TARJETA</button> 
+          <!-- abrir el modal -->
+          <br>
+          <br>
+        <div id="modalTarjeta" class="modal">
+        <!-- contenido del modal -->
+        <div class="modalContenido">
+          <span class="cerrado">&times;</span>
+           <p id="valida">TU TARJETA ES VALIDA</p>
+        </div>
+        </div>
+      </div>
+    
+      <script src="index.js" type="module"></script>
+    </body>
+  </html>
+  
