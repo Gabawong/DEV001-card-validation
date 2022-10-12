@@ -8,35 +8,34 @@
     </head>
     <body>
       <div id="introduccion">
-        <h3> Tu compra ya está casi lista <br> <br>validemos tu tarjeta!</h3>
+        <h3> TU COMPRA YA ESTÁ CASI LISTA...  <br>VALIDEMOS TU TARJETA!</h3>
         </div>
-        <br>
-      
+
       <div id="cuerpo">
       <div class= "datos">
-      <label for="inputNombre">Nombre del titular</label>
-      <input type="text" id="inputNombre" autocomplete="off">
-      
+      <label for="inputNombre">Nombre del titular</label> <br>
+      <input type="text" placeholder= "Ej. Maria Rojas" id="inputNombre" autocomplete="off">
     </div>
+    <br>
       <div class="datos">
-        <label for="inputNumero">Número de tarjeta</label>
-        <input type="text" id="inputNumero" autocomplete="off">
+        <label for="inputNumero">Número de tarjeta</label> <br>
+        <input type="text" placeholder= "Ej.1234 5678 9876 5432" id="inputNumero" autocomplete="off">
         <!-- Con maxlength puedo darle un maximo de caracteres que el usuario puede ingresar  -->
       </div>
-      <div class="datosExpira">
-        <label for="datoMes">Mes</label>
-        <input type="text" id="datoMes">
+      <br>
+      <div class="datos">
+        <label for="datos">Fecha de vencimiento</label> <br>
+        <input type="text" placeholder= "Ej. 08/27" id="datoMes">
       </div>
-      <div class="datosExpira">
-        <label for="datoYears">Año</label>
-        <input type="text" id="datoYears">
-      </div>
-      <div class="codigoCvv">
-        <label for="datoCvv">CVV</label>
-        <input type="password" id="datoCvv">
+  
+      <br>
+      <div class="datos">
+        <label for="datoCvv">CVV</label> <br>
+        <input type="password" placeholder= "Ej. 123" id="datoCvv">
+        
       </div>
         <br>
-        <br>
+        
         <button id ="validarTarjeta">VALIDAR TARJETA</button> 
           <!-- abrir el modal -->
           <br>
