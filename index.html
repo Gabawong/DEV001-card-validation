@@ -1,0 +1,55 @@
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="utf-8">
+      <title> validar tarjeta </title>
+      <link rel="stylesheet" href="style.css" />
+
+    </head>
+    <body>
+      <div id="introduccion">
+        <h3> TU COMPRA YA ESTÁ CASI LISTA...  <br>VALIDEMOS TU TARJETA!</h3>
+        </div>
+
+      <div id="cuerpo">
+      <div class= "datos">
+      <label for="inputNombre">Nombre del titular</label> <br>
+      <input type="text" placeholder= "Ej. Maria Rojas" id="inputNombre" autocomplete="off">
+    </div>
+    <br>
+      <div class="datos">
+        <label for="inputNumero">Número de tarjeta</label> <br>
+        <input type="text" placeholder= "Ej.1234 5678 9876 5432" id="inputNumero" autocomplete="off">
+        <!-- Con maxlength puedo darle un maximo de caracteres que el usuario puede ingresar  -->
+      </div>
+      <br>
+      <div class="datos">
+        <label for="datos">Fecha de vencimiento</label> <br>
+        <input type="text" placeholder= "Ej. 08/27" id="datoMes">
+      </div>
+  
+      <br>
+      <div class="datos">
+        <label for="datoCvv">CVV</label> <br>
+        <input type="password" placeholder= "Ej. 123" id="datoCvv">
+        
+      </div>
+        <br>
+        
+        <button id ="validarTarjeta">VALIDAR TARJETA</button> 
+          <!-- abrir el modal -->
+          <br>
+          <br>
+        <div id="modalTarjeta" class="modal">
+        <!-- contenido del modal -->
+        <div class="modalContenido">
+          <span class="cerrado">&times;</span>
+           <p id="valida">TU TARJETA ES VALIDA</p>
+        </div>
+        </div>
+      </div>
+    
+      <script src="index.js" type="module"></script>
+    </body>
+  </html>
+  
