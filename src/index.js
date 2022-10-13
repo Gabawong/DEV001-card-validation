@@ -24,7 +24,7 @@ import validator from './validator.js';
       document.getElementById("valida").innerHTML="TU TARJETA ES INVALIDA"
     }
     else {
-      document.getElementById("valida")
+      document.getElementById("valida").innerHTML="TU TARJETA ES VÁLIDA"
      }
     }
 

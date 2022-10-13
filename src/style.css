@@ -37,6 +37,7 @@ border: 10px solid #f5d7cd;;
 margin: 2em;
 width:450px;
 height: 450px;
+
   
 }   
 
@@ -44,7 +45,7 @@ input{
     font-family: monospace, lucida handwritingf; 
     font-size: 20px;
     margin-bottom: 12pt;
-    color:#f5d7cd ;
+    color:#070707 ;
 }
 
     
